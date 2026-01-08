@@ -14,10 +14,11 @@ public class Exercise3 {
 
        Scanner scanner= new Scanner(System.in);
        String string;
-       do{
+       
+        do {
             System.out.println("Inserisci una stringa");
-            string=scanner.nextLine();
-            System.out.println(Arrays.toString(string.split("")));
-       } while (!Objects.equals(string, ":q"));
+            string = scanner.nextLine();
+            System.out.println(String.join(",", string.split("")));
+        } while (!string.equals(":q"));
     }
 }
